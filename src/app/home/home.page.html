@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-list  *ngIf="is_product">
+      <ion-item *ngFor="let item of products;let i = index">
+        <ion-label>{{item.title}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+</ion-content>
